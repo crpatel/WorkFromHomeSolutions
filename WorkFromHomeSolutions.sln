@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogBoxDemo", "DialogBoxDemo\DialogBoxDemo.csproj", "{60C5FBC3-BC2B-4071-9070-B77846FB6C63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageLifeCycleDemo", "PageLifeCycleDemo\PageLifeCycleDemo.csproj", "{3CA8F826-01D8-41FD-8ED1-BDBF4437016D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{60C5FBC3-BC2B-4071-9070-B77846FB6C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60C5FBC3-BC2B-4071-9070-B77846FB6C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60C5FBC3-BC2B-4071-9070-B77846FB6C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA8F826-01D8-41FD-8ED1-BDBF4437016D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA8F826-01D8-41FD-8ED1-BDBF4437016D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA8F826-01D8-41FD-8ED1-BDBF4437016D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA8F826-01D8-41FD-8ED1-BDBF4437016D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
