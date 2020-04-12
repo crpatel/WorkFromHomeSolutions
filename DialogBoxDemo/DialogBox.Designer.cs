@@ -1,6 +1,6 @@
 ﻿namespace DialogBoxDemo
 {
-    partial class Form1
+    partial class DialogBox
     {
         /// <summary>
         /// Required designer variable.
@@ -105,13 +105,13 @@
             // 
             // txtFile
             // 
-            this.txtFile.Location = new System.Drawing.Point(118, 63);
+            this.txtFile.Location = new System.Drawing.Point(31, 103);
             this.txtFile.Multiline = true;
             this.txtFile.Name = "txtFile";
-            this.txtFile.Size = new System.Drawing.Size(336, 66);
+            this.txtFile.Size = new System.Drawing.Size(423, 66);
             this.txtFile.TabIndex = 2;
             // 
-            // Form1
+            // DialogBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +123,7 @@
             this.Controls.Add(this.btnOpenFile);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOpenFolder);
-            this.Name = "Form1";
+            this.Name = "DialogBox";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

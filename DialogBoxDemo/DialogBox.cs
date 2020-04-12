@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DialogBoxDemo
 {
-    public partial class Form1 : Form
+    public partial class DialogBox : Form
     {
-        public Form1()
+        public DialogBox()
         {
             InitializeComponent();
         }
