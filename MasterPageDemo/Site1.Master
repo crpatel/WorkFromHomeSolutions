@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MasterPageDemo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+                <tr>
+                    <td colspan="2" style="width: 800px; background-color: cadetblue">
+                        <h1>Header</h1>
+                        <div style="text-align: right">
+                            <asp:Label ID="lblWelcomeMessage" runat="server" Text="Please Login"></asp:Label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 500px; width: 100px; background-color: cadetblue; vertical-align: top">
+                        <h2>Menu</h2>
+                    </td>
+                    <td style="vertical-align: top; width: auto">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width: 800px; background-color: cadetblue">
+                        <h1>Footer</h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
