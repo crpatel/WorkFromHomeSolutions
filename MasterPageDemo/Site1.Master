@@ -16,6 +16,7 @@
                         <h1>Header</h1>
                         <div style="text-align: right">
                             <asp:Label ID="lblWelcomeMessage" runat="server" Text="Please Login"></asp:Label>
+                            <asp:LinkButton ID="linkLogin" runat="server" Text="Login" OnClick="linkLogin_Click"></asp:LinkButton>
                         </div>
                     </td>
                 </tr>

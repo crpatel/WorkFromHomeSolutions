@@ -9,9 +9,18 @@ namespace MasterPageDemo
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
+
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (Session["Username"] != null)
+            {
+                pnlLogin.Visible = false;
+                pnlWelcome.Visible = true;
+            }
+            else
             {
                 pnlLogin.Visible = true;
                 pnlWelcome.Visible = false;
@@ -20,14 +29,15 @@ namespace MasterPageDemo
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(validateUser())
+            if (validateUser())
             {
                 lblErrorMessage.Visible = false;
                 //TODO: Write welcome message
                 //((Site1)Master).LblWelcomeMessage.Text = $"Welcome {Session["username"]}";
-                Master.LblWelcomeMessage.Text = $"Welcome {Session["username"]}";
                 pnlLogin.Visible = false;
                 pnlWelcome.Visible = true;
+                Master.LinkLogin.Text = "Logout";
+                
             }
             else
             {
@@ -43,7 +53,7 @@ namespace MasterPageDemo
                 Session["Username"] = "Chirag";
                 return true;
             }
-           
+
             return false;
         }
     }

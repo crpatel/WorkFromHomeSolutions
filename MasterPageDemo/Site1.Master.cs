@@ -11,7 +11,15 @@ namespace MasterPageDemo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Username"] == null)
+            {
+                linkLogin.Text = "Login";
+            }
+            else
+            {
+                lblWelcomeMessage.Text = $"Welcome {Session["username"]}";
+                linkLogin.Text = "Logout";
+            }
         }
 
         public Label LblWelcomeMessage
@@ -21,6 +29,19 @@ namespace MasterPageDemo
                 return lblWelcomeMessage;
             }
         }
+        public LinkButton LinkLogin { get { return linkLogin; } }
 
+        protected void linkLogin_Click(object sender, EventArgs e)
+        {
+            if (linkLogin.Text == "Login")
+            {
+                Response.Redirect("WebForm2.aspx");
+            }
+            else
+            {
+                Session["Username"] = null;
+                Response.Redirect("WebForm2.aspx");
+            }
+        }
     }
 }
